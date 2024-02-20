@@ -561,7 +561,7 @@ printf "${red}Press ENTER key to continue...${white}"
 read enter_to_continue_user_input
 
 printf "\n${yellow}Upload operation will upload/sync the contents of your local machine to the server, press ENTER key to continue? ${white}"
-read enter_to_continue_user_input
+read -t 10 enter_to_continue_user_input
 
 # Add the debug options
 if [[ "$enable_debug" == "Y" || "$enable_debug" == "y" ]]; then
